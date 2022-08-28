@@ -1,10 +1,9 @@
-import { combineReducers } from 'redux';
-import changeNumber from './reducer';
-
-
+import { combineReducers } from "redux";
+import ProductReducer from './ProductReducer';
+import numberChange from './reducer';
 
 const rootReducer = combineReducers({
-    changeNumber,
+    numberChange,ProductReducer,
 })
 
 export default rootReducer;

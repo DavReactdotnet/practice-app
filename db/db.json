@@ -1,0 +1,31 @@
+{
+    "products":[
+        {
+            "id":1,
+        "name":"mobile",
+        "color":"red",
+        "price":50055,
+        "category":"flagship",
+        "brand":"nokia",
+        "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+    },
+    {
+        "id":2,
+    "name":"cap",
+    "color":"red",
+    "price":50055,
+    "category":"flagship",
+    "brand":"nokia",
+    "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+},
+{
+    "id":2,
+"name":"shoe",
+"color":"red",
+"price":50055,
+"category":"flagship",
+"brand":"nokia",
+"image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+}
+    ]
+}
