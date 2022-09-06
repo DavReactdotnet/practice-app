@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.icon{
+  cursor: pointer;
+}
+
+.count{
+  right: 147px;
+  top: 10px;
+  background-color: rgb(255, 255, 255);
+  
+
+}

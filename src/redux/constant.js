@@ -1,0 +1,8 @@
+
+
+
+export const ADD_PRODUCT = "ADD_PRODUCT"
+export const REMOVE_PRODUCT = "REMOVE_PRODUCT"
+export const PRODUCT_LIST = "PRODUCT_LIST"
+export const SET_PRODUCT_LIST = "SET_PRODUCT_LIST"
+export const SEARCH_PRODUCT = "SEARCH_PRODUCT"

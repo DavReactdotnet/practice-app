@@ -2,30 +2,46 @@
     "products":[
         {
             "id":1,
-        "name":"mobile",
-        "color":"red",
-        "price":50055,
-        "category":"flagship",
-        "brand":"nokia",
-        "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "name":"Cap",
+            "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg",
+            "description":"Lorem Ipsum is  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+            "price":50055,
+            "category":"midrange",
+        "rating":"5 star"
     },
     {
         "id":2,
-    "name":"cap",
-    "color":"red",
+        "name":"Shocks",
+        "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-02.jpg",
+        "description":"Lorem Ipsum is  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "price":50055,
+        "category":"flagship",
+    "rating":"5 star"
+}, {
+    "id":3,
+    "name":"Cap",
+    "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-10.jpg",
+    "description":"Lorem Ipsum is  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "price":50055,
+    "category":"midrange",
+"rating":"5 star"
+}, {
+    "id":4,
+    "name":"Key ring",
+    "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-03.jpg",
+    "description":"Lorem Ipsum is  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     "price":50055,
     "category":"flagship",
-    "brand":"nokia",
-    "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
-},
-{
-    "id":2,
-"name":"shoe",
-"color":"red",
-"price":50055,
-"category":"flagship",
-"brand":"nokia",
-"image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+"rating":"5 star"
+}, {
+    "id":5,
+    "name":"Cap",
+    "image":"https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg",
+    "description":"Lorem Ipsum is  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "price":50055,
+    "category":"midrange",
+"rating":"5 star"
 }
+
     ]
 }

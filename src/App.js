@@ -1,64 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import "./App.css"
-import {Button, Form,Table} from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
-import {increment,decrement} from './action/action';
-import { productName } from './action/product';
-
-
+import { addProduct, removeProduct } from './redux/action/action'
+import { Button, Navbar, Container, Nav, NavDropdown, Form, Image } from 'react-bootstrap';
+import { productList, searchProduct } from './redux/action/productAction';
+import Cart from './Components/Cart';
+import cart from './assets/cart.png';
 const App = () => {
-  const mystate = useSelector((state)=>state.numberChange)
-  const data = useSelector((state)=>state)
- const dispatch =  useDispatch()
+  const dispatch = useDispatch()
+  const data = useSelector((store) => store)
 
 
-console.log("data from api",data)
   return (
-    <div className='App'>
+    <>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#">TestKart</Navbar.Brand>
 
-        <div className='d-flex justify-content-center mt-5'>
-          <Button className='btn btn-info' onClick={()=>dispatch(increment())}>+</Button>
-          <Form.Control type="text" value={mystate} className="w-25 text-center" />
-          <Button className='btn btn-danger' onClick={()=>dispatch(decrement())}>-</Button>
-        </div>
+          <Form className='d-flex' >
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-5"
+              aria-label="Search"
+              onChange={(e)=>dispatch(searchProduct(searchProduct(e.target.value)))}
+            />
+            <div className='position-relative'> <Image src={cart} style={{ width: "50px" }} />  </div>
+            <spam className="position-absolute count rounded-pill">{data.productReducer}</spam>
+          </Form>
 
-        <div className=' w-50 m-auto mt-5'>
-        <Button className='btn btn-danger' onClick={()=>dispatch(productName())}>poduct name</Button>
+        </Container>
+      </Navbar>
+      <Button onClick={() => dispatch(productList())}>GetProduct</Button>
+      <Cart />
 
-        </div>
-
- 
-        {
-          data.ProductReducer.map((item,index)=>{
-            return(
-            <>
-             <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th> Name</th>
-          <th>Price</th>
-          <th>Brand</th>
-          <th>Image</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{item.id}</td>
-          <td>{item.name}</td>
-          <td>{item.price}</td>
-          <td>{item.brand}</td>
-          <td><img src={item.image}/></td>
-        </tr>
-     
-      </tbody>
-    </Table>
-            </>
-            )
-          })
-        }
-
-    </div>
+    </>
   )
 }
 
